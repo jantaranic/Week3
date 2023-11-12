@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CSS Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Mali', cursive;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: #e96969;
+            color: white;
+            padding: 10px 50px 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            right: 0;
+            left: 0;
+        }
+        .logo{
+            margin-left: 20px;  
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            display: inline-block;
+        }
+        #content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+        footer{
+            background-color: rgb(220, 197, 167);
+            color: rgb(17, 16, 16);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        a.btn{
+            height: 30px;
+            width: 100px;
+            margin-top: 10px;
+            border-radius: 100px;
+            background-color: rgb(245, 199, 138);
+            color: palevioletred;
+            border: solid 1px #e96969;
+
+            padding-top: 18px;
+            text-align: center;
+            text-decoration: none;
+        }
+        a.btn:hover{
+            background-color: rgb(239, 172, 215);
+            color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <!-- <img src="" alt="LOGO" width="50"> -->
+            LOGO
+        </div>
+        <div class="menu">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Service.html">Service</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main id="content">
+        <h1>บริษัท มาซารุมาเก็ตติ้ง จำกัด</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut debitis doloremque ducimus qui, earum molestiae?</p>
+         <a href="#"class="btn">start now</a>
+    </main>
+
+    <footer>
+        &copy; Jantaranic Suwannagerd
+    </footer>
+
+</body>
+
+</html>
